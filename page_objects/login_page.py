@@ -16,3 +16,6 @@ class LoginPage(PageModel):
         self.username_field.send_keys(username)
         self.password_field.send_keys(password)
         self.login_button.click()
+
+    def get_error_message(self):
+        return self.error_container.get_text()
