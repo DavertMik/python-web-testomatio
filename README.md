@@ -1,5 +1,6 @@
 # pytest-web-ui-demo
 Project to demonstrate Pytest + Selenium usage for Web UI test automation
+---
 
 :computer: Application used in this project: [Swag Labs Demo](https://www.saucedemo.com/)
 
@@ -7,18 +8,18 @@ Project to demonstrate Pytest + Selenium usage for Web UI test automation
 It is recommended that you create a new [virtualenv](https://virtualenv.pypa.io/en/latest/) to install the dependencies. 
 
 :large_orange_diamond: To install virtualenv run:
-> pip3 install virtualenv
+- `pip3 install virtualenv`
 
 :large_orange_diamond: Create a new virtualenv at the project root:
-> python3 -m venv venv
+- `python3 -m venv venv`
 
 :large_orange_diamond: Install dependencies. **Make sure your virtualenv is activated** if you don't know how to do it please read this [guide](https://docs.python-guide.org/dev/virtualenvs/) Basic Usage section.
-> pip -r install requirements.txt
+- `pip -r install requirements.txt`
 
 :large_blue_diamond: To execute tests simply run:
-> pytest
-
-This project have the following structure:
+- `pytest`
+---
+### This project have the following structure:
 - **config**
   - General test data, composed by constants like chrome executable path, base url, default selenium timeout
 - **drivers**
