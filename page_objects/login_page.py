@@ -5,12 +5,10 @@ from lib.page import PageModel
 
 
 class LoginPage(PageModel):
-    def __init__(self, driver, url):
-        super().__init__(driver, url)
-        self.username_field = Element(self.driver, (By.ID, 'user-name'))
-        self.password_field = Element(self.driver, (By.ID, 'password'))
-        self.login_button = Element(self.driver, (By.ID, 'login-button'))
-        self.error_container = Element(self.driver, (By.CSS_SELECTOR, '.error-message-container'))
+    username_field = Element((By.ID, 'user-name'))
+    password_field = Element((By.ID, 'password'))
+    login_button = Element((By.ID, 'login-button'))
+    error_container = Element((By.CSS_SELECTOR, '.error-message-container'))
 
     def login(self, username, password):
         self.username_field.send_keys(username)
