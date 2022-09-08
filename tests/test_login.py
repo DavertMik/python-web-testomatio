@@ -14,7 +14,7 @@ class TestLogin:
     def test_login_without_username(self, login_page):
         login_page.open()
         login_page.login('', 'bad_password')
-        expected_error = 'Epic sadface: Username is required'
+        expected_error = 'Epic sadface: Username is not required'
         assert login_page.get_error_message() == expected_error
 
     def test_login_without_password(self, login_page):

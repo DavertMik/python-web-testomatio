@@ -1,3 +1,32 @@
+# Testomat.io Python Project
+
+To run tests with XML report generarted:
+
+```
+pytest --junit-xml report.xml
+```
+
+To upload report to Testomat.io.
+
+Install Testomat.io reporter
+
+```
+npx @testomatio/reporter --save
+```
+
+Run `npx report-xml` from `@testomatio/reporter` package.
+
+```
+TESTOMATIO={apiKey} npx report-xml --pytest report.xml
+```
+
+> Note
+>
+> Original docs below:
+
+---
+
+
 # pytest-web-ui-demo
 Project to demonstrate Pytest + Selenium usage for Web UI test automation
 ---
