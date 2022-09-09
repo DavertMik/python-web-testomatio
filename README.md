@@ -17,7 +17,7 @@ npx @testomatio/reporter --save
 Run `npx report-xml` from `@testomatio/reporter` package.
 
 ```
-TESTOMATIO={apiKey} npx report-xml --pytest report.xml
+TESTOMATIO={apiKey} npx report-xml --lang python report.xml
 ```
 
 > Note
